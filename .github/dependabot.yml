@@ -25,3 +25,15 @@ updates:
                   - '*'
       commit-message:
           prefix: fix(ignore)
+    - package-ecosystem: devcontainers
+      directory: /
+      schedule:
+        interval: weekly
+      open-pull-requests-limit: 5
+      groups:
+        routine-updates:
+          patterns:
+          - '*'
+          update-types:
+          - minor
+          - patch
